@@ -1,6 +1,27 @@
 /* ==========================================================================
    Base styles
    ========================================================================== */
+:root{
+  --bs-blue: #0d6efd;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 html {
   color: #222;
   font-size: 1em;
@@ -14,4 +35,8 @@ html {
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
+}
+
+.gdpr__banner{
+
 }
