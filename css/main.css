@@ -2,7 +2,9 @@
    Base styles
    ========================================================================== */
 :root{
-  --bs-blue: #0d6efd;
+  --nc-color: #001935;;
+  --nc-pd-x: 24px;
+  --ncpd-y: 20px;
 }
 *,
 *::before,
@@ -36,7 +38,44 @@ html {
   background: #b3d4fc;
   text-shadow: none;
 }
+a{
+  text-decoration: none;
+}
 
 .gdpr__banner{
+  color: #fff;
+  background: var(--nc-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: var(--ncpd-y) var(--nc-pd-x);
+}
+.gdpr__container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: end;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.gdpr__description{
+  flex: 1;
+}
 
+.gdpr__buttons{
+  display: flex;
+  flex-direction: column;
+}
+.gdpr__button{
+  font-weight: 700;
+  color: #ffffff;
+  padding: 6px 24px;
+  border:1px solid #ffffff;
+  text-align: center;
+  border-radius: 2px;
+  text-wrap: nowrap;
+}
+.gdpr__button +.gdpr__button{
+  margin-top: .8rem;
 }
